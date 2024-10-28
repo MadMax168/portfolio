@@ -1,0 +1,266 @@
+:root{
+    --m1-color: #1b1b1b;
+    --m2-color: #f4f2f1;
+}
+
+#AboutMe{
+    display: grid;
+    grid-template: 
+    "f f" 25vh
+    "p p" 100vh;
+    animation: fade-up 1s;
+
+    #prof-AboutMe{
+        display: flex;
+
+        .ex-left{
+            position: absolute;
+            width: 50vw;
+            height: 100vh;
+            padding: 100px;
+            transform: translateX(-50vw);
+            transition: all 1.5s;
+        }
+        .fade-left{
+            position: absolute;
+            width: 50vw;
+            height: 100%;
+            background-color: rgba(27, 27, 27, 0.95);
+            transform: translateX(0);
+        }
+        .hidden{
+            display: none;
+        }
+        .left-prof{
+            width: 50%;
+        }
+        .right-prof{
+            width: 50%;
+        }
+    }
+}
+
+#pre-AboutMe{grid-area: f;} #prof-AboutMe{grid-area: p;}
+
+.me-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px;
+    gap: 10px;
+    color: var(--m2-color);
+    animation: fade-up 2s;
+    .header{
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 3px 3px #000;
+    }
+    .text{
+        font-size: 30px;
+        text-align: left;
+        ul{
+            gap: 10px;
+            list-style: none;
+        } 
+    }
+}
+
+.edu-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    .header{
+        text-align: center;
+        font-size: 50px;
+        color: var(--m2-color);
+        text-shadow: 3px 3px #000;
+    }
+    .container{
+        width: 500px;
+        height: 650px;
+        padding: 10px;
+        background-color: var(--m2-color);
+        border-radius: 50px;
+        color: var(--m1-color);
+        .btn-container{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            color: var(--m2-color);
+            .btn{
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: var(--m1-color);
+            }
+            .btn:hover{
+                animation: shake .5s;
+            }
+        }
+        .edu-container{
+            position: relative;
+            padding: 10px;
+            animation: fade-up 2s;
+            .pri{
+                position: absolute;
+            }
+            .sec{
+                position: absolute;
+            }
+            .uni{
+                position: absolute;
+            }
+            .title{
+                text-align: center;
+                font-size: 25px;
+            }
+            .text{
+                font-size: 15px;
+                ul{
+                    list-style: none;
+                    li{
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.left-prof{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img-container{
+        position: relative;
+        width: 750px;
+        height: 550px;
+        padding: 25px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        
+        .down-img{
+            position: absolute;
+            right: 0;
+            
+        }
+        .topper-img{
+            position: absolute;
+            left: 100px;
+            transition: all 2s;
+        }
+        img{
+            width: 500px;
+        }
+    }
+    .img-container:hover{
+        .down-img{
+            img{
+                animation: rotate 10s linear infinite;
+            }
+        }
+        .topper-img{
+            transform: translateX(-100px);
+        }
+    }
+    .contact-container{
+        width: 750px;
+        height: 100px;
+        
+        .contact-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 30px;
+            
+            li{
+                width: 100px;
+                height: 100px;
+                border-radius: 30px;
+                background-color: var(--m2-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 5s ease;
+
+                a{
+                    color: var(--m1-color);
+
+                    i{
+                        font-size: 75px;
+                    }
+                }
+            }
+
+            li:hover{
+                animation: rotate 1s ease;
+                i{
+                    font-size: 80px;
+                }
+            }
+        }
+    }
+}
+
+.right-prof{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .btn-container{
+        width: 650px;
+        height: 950px;
+        padding: 25px;
+
+        .btn-row{
+            width: 100%;
+            height: 300px;
+            gap: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn{
+                width: 275px;
+                height: 275px;
+                background-color: rgba(166, 166, 166, 0.2);
+                box-shadow: 5px 5px rgba(115, 115, 115, 0.2);
+                transition: all 1ms linear;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                .btn-txt{
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: var(--m2-color);
+                }
+            }
+            .btn:hover{
+                width: 250px;
+                height: 250px;
+                animation: shake 750ms ease;
+            }
+        }
+    }
+}
+
+@keyframes shake {
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    20%, 80%{
+        transform: rotate(-10deg);
+    } 
+    40%, 60%{
+        transform: rotate(10deg);
+    }
+}

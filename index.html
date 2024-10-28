@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>madmax16_</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/AboutMe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="load">
+        <div class="p-load" id="p-load">
+            <div id="img-load">
+                <img src="image/Loading.gif">
+            </div>
+        </div>
+    </section>
+    <section id="page">
+        <header>
+            <div id="nav">
+                <div class="logo">
+                    <img src="image/logo.png" class="img-logo" width="50px"> PORTFOLIO.
+                </div>
+                <div class="nav-items">
+                    <a href="#Home">HOME</a>
+                    <a href="#prof-AboutMe">ABOUTME</a>
+                    <!-- <div class="GGT-icon">GGT</div>
+                    <div class="DLM-icon">DLM</div> -->
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <div id="Home">
+                <div class="carousel-container">
+                    <div class="carousel-slide"><!-- Slide Images -->
+                        <div class="slide" style="background-image: url('image/slide1.png');">
+                            <div class="txt-slide">
+                                <div class="txt-rotate">
+                                    Hi, I'm
+                                    <div class="txt-list">
+                                        <span>
+                                            "P.Watthanahemmarat"<br>
+                                            "Max"<br>
+                                            "Polwarit"<br>
+                                            "Watthanahemmarat"
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="but-container"><a href="#prof-AboutMe">SEE MORE</a></div>
+                            </div>
+                        </div>
+                        <div class="slide" style="background-image: url('image/slide2.png');">
+                            <div class="txt-slide">
+                                <div class="txt">
+                                    Computer Project<br>Work Competition
+                                </div>
+                                <div class="but-container"><a href="">SEE MORE</a></div>
+                            </div>
+                        </div>
+                        <div class="slide" style="background-image: url('image/slide3.png');">
+                            <div class="txt-slide">
+                                <div class="txt">
+                                    KMUTT<br> Engineering Quest
+                                </div>
+                                <div class="but-container"><a href="">SEE MORE</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation Arrows -->
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    <div class="dat-container"><!-- Slide Position Indicators -->
+                        <span class="dat" onclick="currentSlide(1)"></span>
+                        <span class="dat" onclick="currentSlide(2)"></span>
+                        <span class="dat" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>            
+            </div>
+            <div id="AboutMe">
+                <div id="prof-AboutMe">
+                    <div class="left-prof">
+                        <a href="portfolio.pdf" target="_blank" class="img-container">
+                            <div class="down-img"><img src="image/dics_profile.png"></div>
+                            <div class="topper-img"><img src="image/name.png"></div>
+                        </a>
+                        <div class="contact-container">
+                            <ul class="contact-list">
+                                <li><a href="https://www.instagram.com/madmax16_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/phonvarit" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/polwarit-watthanahemmarat-04034932a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/MadMax168" target="_blank"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.twitch.tv/madmax_168" target="_blank"><i class="fa fa-twitch"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCewzQ3JUKWQeN1jhdjCyDXw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ex-left" id="xleft">
+                        <div class="me-page hidden" id="mepage">
+                            <div class="header">ABOUT ME</div>
+                            <div class="text">
+                                <ul>
+                                    <li>NAME: Polwarit Watthanahemmarat</li>
+                                    <li>NICKNAME: Max</li>
+                                    <li>BORN: 16 AUG 2005</li>
+                                    <li>AGE: 19</li>
+                                    <li>WORK: Student</li>
+                                    <li>NATIONALITY: THAI</li>
+                                    <li>EMAIL: phonvarit@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="edu-page hidden" id="edupage">
+                            <div class="header">EDUCATION</div>
+                            <div class="container">
+                                <div class="btn-container">
+                                    <div class="btn" id="pri-btn">Primary</div>
+                                    <div class="btn" id="sec-btn">Secondary</div>
+                                    <div class="btn" id="uni-btn">College</div>
+                                </div>
+                                <div class="edu-container">
+                                    <div class="pri" id="pri">
+                                        <div class="title">PRIMARY SCHOOL</div>
+                                        <div class="text">
+                                            <ul>
+                                                <li>KORNPITACK SCHOOL</li>
+                                                <li>Kindergarten - Grade 6</li>
+                                                <li>LOCATION:</li>
+                                            </ul>
+                                        </div>
+                                        <div class="location">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15506.542717929477!2d100.3826447!3d13.6799034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2bd90709263b1%3A0xa5415461f28c4f85!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4LiB4Lij4Lie4Li04LiX4Lix4LiB4Lip4LmM4Lio4Li24LiB4Lip4Liy!5e0!3m2!1sth!2sth!4v1730043986328!5m2!1sth!2sth" width="450" height="450" style="border:2px solid #1b1b1b; border-radius: 25px; margin: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="sec hidden" id="sec">
+                                        <div class="title">SECONDARY SCHOOL</div>
+                                        <div class="text">
+                                            <ul>
+                                                <li>POTISARNPITTAYAKORN SCHOOL</li>
+                                                <li>Grade 7 - Grade 12</li>
+                                                <li>GPAX: 3.57 | BRANCH: SCICOM</li>
+                                                <li>LOCATION:</li>
+                                            </ul>
+                                        </div>
+                                        <div class="location">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.1819716484933!2d100.42419167591!3d13.767897296918983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e297435f934779%3A0xefd5546a7a3c0071!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4LmC4Lie4LiY4Li04Liq4Liy4Lij4Lie4Li04LiX4Lii4Liy4LiB4Lij!5e0!3m2!1sth!2sth!4v1730044707625!5m2!1sth!2sth" width="450" height="450" style="border:2px solid #1b1b1b; border-radius: 25px; margin: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="uni hidden" id="uni">
+                                        <div class="title">UNIVERSITY</div>
+                                        <div class="text">
+                                            <ul>
+                                                <li>King Mongkut's University of Technology Thonburi</li>
+                                                <li>BRANCH: Computer Engineering | Freshman</li>
+                                                <li>LOCATION:</li>
+                                            </ul>
+                                        </div>
+                                        <div class="location">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.106954579478!2d100.49386787590882!3d13.651257399611676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a251bb6b0cf1%3A0xf656e94ff13324ad!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lie4Lij4Liw4LiI4Lit4Lih4LmA4LiB4Lil4LmJ4Liy4LiY4LiZ4Lia4Li44Lij4Li1!5e0!3m2!1sth!2sth!4v1730045023433!5m2!1sth!2sth" width="450" height="450" style="border:2px solid #1b1b1b; border-radius: 25px; margin: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-prof">
+                        <div class="btn-container">
+                            <div class="btn-row">
+                                <div class="btn" id="btn-me">
+                                    <div class="btn-txt">ABOUTME</div>
+                                </div>
+                                <div class="btn" id="btn-edu">
+                                     <div class="btn-txt">EDUCATION</div>
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <a href="" class="btn" style="text-decoration: none;">
+                                    <div class="btn-txt">CERTIFICATE</div>
+                                </a>
+                                <a href="" class="btn" style="text-decoration: none;">
+                                    <div class="btn-txt">ACTIVITIES</div>
+                                </a>
+                            </div>
+                            <div class="btn-row">
+                                <a href="skills.html" class="btn" style="text-decoration: none;">
+                                    <div class="btn-txt">SKILLS</div>
+                                </a>
+                                <a href="" target="_blank" class="btn" style="text-decoration: none;">
+                                    <div class="btn-txt">RESUME</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div id="sidebar">
+                <div class="but-side" onclick="">
+                    <img src="image/menu_but.png" alt="" width="100%">
+                </div>
+                <div class="list-side">
+
+                </div>
+            </div>
+        </aside>
+    </section>
+</body>
+
+<script src="javascript/loading.js"></script>
+<script src="javascript/carousel.js"></script>
+<script src="javascript/showText.js"></script>
+<script src="javascript/movepage.js"></script>
+
+</html>

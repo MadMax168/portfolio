@@ -1,0 +1,25 @@
+:root{
+    --l-color: #1b1b1b;
+}
+
+#p-load{
+    position: fixed;
+    display: flex; 
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--l-color);
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 200;
+
+    #img-load img{
+        border-radius: 100%;
+        width: auto;
+    }
+}
+
+.p-load--hidden{
+    opacity: 0;
+    visibility: hidden;
+}

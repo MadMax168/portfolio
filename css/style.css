@@ -1,0 +1,64 @@
+:root{
+    --m1-color: #1b1b1b;
+    --m2-color: #f4f2f1;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+    z-index: 100;
+}
+
+body{
+    background-color: var(--m1-color);
+}
+
+#content{
+    display: grid;
+    grid-template: 
+    "h h" 100vh
+    "a a" 100vh
+    ;
+}
+
+#Home{grid-area: h;} #AboutMe{grid-area: a;}
+
+#Home{
+    background-color: var(--m2-color);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    z-index: 100;
+    animation: fade-up 1s;
+}
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

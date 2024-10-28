@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+    z-index: 100;
+}
+
+body{
+    background-color: var(--m1-color);
+}
+
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--m1-color);
+    
+    .card-container{
+        display: flex;
+        gap: 50px;
+    }
+}

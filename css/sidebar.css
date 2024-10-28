@@ -1,0 +1,36 @@
+aside{
+    z-index: 150;
+
+    #sidebar{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 10rem;
+        cursor: pointer;
+        margin: 10px;
+        
+        .but-side{
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            transition: all 5ms ease;
+        }
+        .but-side:hover{
+            animation: rotate 5s linear infinite;
+            margin: 0;
+        }
+    }
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
